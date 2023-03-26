@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mateo Paloma</title>
+        <link rel="stylesheet" href="{% static 'myportfolio/index.css' %}">
+        <link rel="shortcut icon" href="{% static 'myportfolio/images/Logo.png' %}">
+        <link rel="stylesheet" href="{% static 'myportfolio/responsive/mobile.css' %}" media="screen and (min-width:320px)">
+        <link rel="stylesheet" href="{% static 'myportfolio/responsive/tablet.css' %}" media="screen and (min-width:600px)">
+        <link rel="stylesheet" href="{% static 'myportfolio/responsive/desktop.css' %}" media="screen and (min-width:800px)">
+
+    </head>
+    <body>
+        <header class="page-header">
+            <a href="https://www.linkedin.com/in/mateopaloma/"><img src="{% static 'myportfolio/images/Logo.png' %}" alt="Logo"
+                    title="Linkedin"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#myroute">My Route</a></li>
+                    <li><a href="#technologies">Technology</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="page-main">
+            <section id="aboutme" class="aboutme">
+                <h1 class="aboutme__title">About me</h1>
+                <p class="aboutme__text">My name is Mateo Palomá, I am from
+                    Colombia and I am studying Software Engineer, I am in third
+                    semester
+                    (2023-1), I love what we can do with programming, it's the
+                    reason why I am studying but overall why I am really
+                    interested of being part of
+                    this.<br>
+                    <br>
+                    This web site I created because I wanted to see all what I
+                    am learning and put to the test all of this, on the footer,
+                    you will see where
+                    you can find me, I just want to be part of a team where I
+                    can create and help others.
+                </p>
+            </section>
+            <section id="projects" class="projects">
+                <h1 class="projects__title">Projects</h1>
+                <p class="projects__text">
+                    This section you will find some side projects I have been doing by myself <br>
+
+                </p>
+                <div class="container_projects">
+                    <div class="projects__hangman_game">
+                        <h2 class="projects__hangman__title">Hangman Game</h2>
+                        <span class="projects__hangman__text">This version made by myself of the famous game Handman game
+                            I just use Python, and libraries as <b>random</b>, I had a data of words, it will choose one of them
+                            and you will try to guess what is the word. And <b>os</b> for reading the files and write them
+                        </span>
+                        <figure class="projects__hangman__picture">
+                            <a href="https://github.com/mateopal09/Hangman-game"  target="_blank"><img src="{% static 'myportfolio/images/Hangman.gif' %}"
+                                    alt="Hangman Image"></a>
+                        </figure>
+                    </div>
+                    <div class="projects__fastapi">
+                        <h2 class="projects__fastapi__title">FastAPI</h2>
+                        <span class="projects__fastapi__text">I created a basic API using FastAPI and It will recreate a possible API
+                            like Twitter API. It has a CRUD for tweets and users.</span>
+                        <figure class="projects__fastapi__picture">
+                            <a
+                                href="https://github.com/mateopal09/Fastaapi_exercise"
+                                target="_blank"><img src="{% static 'myportfolio/images/fastapi.gif' %}"
+                                    alt="Fastapi Image"></a>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="myroute" class="myroute">
+                <h1 class="myroute__title">My Route</h1>
+                <p class="myroute__text">This is my "Software engineer" route, where I started and how I am now.</p>
+                <figure class="myroute__picture">
+                    <img src="{% static 'myportfolio/images/myroute.jpg' %}"
+                        alt="My route image" title="My route path">
+                </figure>
+            </section>
+            <section id="technologies" class="technologies">
+                <h1 class="technologies__title">Technologies</h1>
+                <div class="technologies__items">
+                    <figure class="technologies__python">
+                        <img src="{% static 'myportfolio/images/python.png' %}"
+                            alt="Python Logo" title="Python">
+                    </figure>
+                    <figure class="technologies__django">
+                        <img src="{% static 'myportfolio/images/django.png' %}"
+                            alt="Django Logo" title="Django">
+                    </figure>
+                    <figure class="technologies__html">
+                        <img src="{% static 'myportfolio/images/html.png' %}"
+                            alt="HTML Logo" title="HTML5">
+                    </figure>
+                    <figure class="technologies__css">
+                        <img src="{% static 'myportfolio/images/css.png' %}"
+                            alt="Css logo" title="CSS3">
+                    </figure>
+                    <figure class="technologies__fastapi">
+                        <img src="{% static 'myportfolio/images/fastapi_image.png' %}"
+                            alt="FastAPI Logo" title="FastAPI">
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <section>
+                <ul class="page-footer__items">s
+                    <a href="https://www.linkedin.com/in/mateopaloma/"
+                        target="_blank"><li>Linkedin</li></a>
+                    <a href="https://github.com/mateopal09" target="_blank"><li>Github</li></a>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>

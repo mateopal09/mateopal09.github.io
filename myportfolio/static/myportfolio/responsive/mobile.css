@@ -1,0 +1,94 @@
+:root{
+    --height-page: 70rem;    
+}
+
+
+.projects{
+    margin: 1rem;
+}
+
+.container_projects{
+    display: block;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.projects__hangman_game{
+    width: 100%;
+    height: fit-content;
+}
+
+.projects__hangman__picture img {
+    height: auto;
+}
+
+.projects__fastapi{
+    width: 100%;
+    margin-top: 3rem;
+    height: fit-content;
+}
+
+.projects__fastapi__picture img{
+    height: 20rem;
+}
+
+.myroute{
+    width: 100%;
+    margin-top: 40rem;
+}
+
+.myroute__text{
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+
+}
+
+.myroute__picture img{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+
+.technologies{
+    display: flex;
+}
+
+.technologies__title{
+    padding-top: 0;
+}
+
+.technologies__items{
+    width: 100%;
+
+}
+
+.technologies__python img{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.technologies__django img{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.technologies__html img{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.technologies__css img{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.technologies__fastapi img{
+    width: 60%;
+    margin: auto;
+    
+}
